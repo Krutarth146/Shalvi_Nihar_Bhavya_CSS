@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        h1, p{
+            /* Element Selector */
+            color: red;
+        }
+
+        .royal{
+            /* class */
+            font-size: 25px;
+            color: blue;
+        }
+
+        #nihar{
+            /* Id */
+            font-weight: 800;
+            font-family: cursive;
+        }
+
+        div h1.shalvi
+        {
+            color: green;
+            font-size: 40px;
+        }
+
+        div.dhruv h1.shalvi{
+            /* element.class */
+            font-family: facile sans;
+            font-size: 27px;
+        }
+
+        #thakkar{
+            background-color: aquamarine;
+        }
+
+        *{
+            /* Universal Selector */
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Selectors --> Element, Class, Id
+    <h1>This is Heading 1</h1>
+    <h1 class="royal">This is Another H1</h1>
+
+    <p class="royal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure neque maxime necessitatibus consectetur id rerum minima suscipit quis laudantium vel?</p>
+
+    <h2 id="nihar">This is h2</h2>
+
+    <div>
+        <h1 class="shalvi">This is h1 Under div class</h1>
+    </div>
+
+    <div class="dhruv">
+        <h1 class="shalvi">This is h1 Under div class</h1>
+        <h1 class="shalvi" id="thakkar">This is h1 Under div class</h1>
+    </div>
+
+
+    <ol>
+        <li>
+            Simple Selectors
+            <ul>
+                <li>Based on ELemnts, Class, ID</li>
+            </ul>
+        </li>
+        <li>
+            Combinator
+            <ul>
+                <li>
+                    select elements based on specific relationship b/w them.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Psudo-class Selectors
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </li>
+        <li>
+            Psudo-Elements Selectors
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </li>
+        <li>
+            Attribute Selectors
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </li>
+
+    
+    </ol>
+</body>
+</html>
