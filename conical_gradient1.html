@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            /* background-color: yellow; */
+            /* border: 2px solid red; */
+            /* margin-left: 100px; */
+            margin: 20px 50px 80px 50px;
+            float: left;
+            border-radius: 50%;
+        }
+        
+        .b1{
+            background-image: conic-gradient(red, yellow, green);
+        }
+        
+        .b2{
+            background-image: conic-gradient(from -45deg, red, yellow, green);
+        }
+
+        .b3{
+            background-image: conic-gradient(red, yellow, green, red);
+        
+        }
+
+        .b4{
+            background-image: conic-gradient(at 20% 60%, red 60deg, yellow, green);
+        }
+
+        .b5{
+            background-image: repeating-conic-gradient(red 0deg, red 10deg, yellow 10deg, yellow 40deg);
+        }
+
+        .b6{
+            background-image: repeating-conic-gradient(rgba(0,0,0,0) 0deg, rgba(0,0,0,0) 10deg, rgba(0,0,0,0.5) 10deg, rgba(0,0,0,0.5) 20deg);
+            background-color: blue;
+        }
+
+        .b7{
+            background-image: repeating-conic-gradient(from 45deg, #fff 0deg, #fff 90deg, rgb(32, 168, 222) 90deg, rgb(32, 168, 222) 180deg);
+        }
+
+
+        .b8{
+            background-image: repeating-conic-gradient(yellow 0deg, yellow 90deg, #fff 90deg, #fff 180deg);
+            border-radius: 0;
+            background-size: 50px 50px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container"></div> -->
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+    <div class="box b3"></div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+    <div class="box b6"></div>
+    <div class="box b7"></div>
+    <div class="box b8"></div>
+
+    <!-- div.box.b$*10 -->
+</body>
+</html>
