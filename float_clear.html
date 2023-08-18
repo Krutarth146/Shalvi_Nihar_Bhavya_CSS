@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            margin: 20px;
+            width: 250px;
+            height: 250px;
+            border: 2px solid red;
+        }
+
+        .box{
+            width: 60px;
+            height: 60px;
+            border: 2px solid blue;
+        }
+
+
+        .b1{
+            float: right;
+            clear: left;
+        }
+
+        .b2{
+            /* clear: left; */
+            float: right;
+            clear: right;
+        }
+
+        .b3{
+            float: left;
+            clear: left;
+        }
+
+        .b4{
+            /* clear: left; */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">box-1</div>
+        <div class="box b2">box-2</div>
+        <div class="box b3">box-3</div>
+        <div class="box b4">box-4</div>
+    </div>
+</body>
+</html>
